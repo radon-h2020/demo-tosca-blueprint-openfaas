@@ -1,0 +1,6 @@
+# This yaml file contains inputs for system_preparation_opera_v1_3.yml.
+
+host_ip: <your-host-ip>
+credentials: "{{ lookup('file','/tmp/credentials.json') }}"
+linux_distro: <linux-distribution>
+linux_release: <linux-release>
