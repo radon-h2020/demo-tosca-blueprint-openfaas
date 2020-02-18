@@ -1,0 +1,8 @@
+# This yaml file contains inputs for resize_service_opera_v1_3.yml.
+
+host_ip: <your-host-ip>
+credentials: "{{ lookup('file','/tmp/credentials.json') }}"
+bucket_in_name: <bucket-in-name>
+bucket_out_name: <bucket-out-name>
+resize_image_name: <resize-image-name>
+resize_function_name: <resize-function-name>
