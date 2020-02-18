@@ -110,7 +110,7 @@ according to yourself to set the appropriate params(IPs, bucket names etc.). The
 
 | Variable | Purpose | Example
 |:-------------|:-------------|:-------------|
-| `host_ip` | IP address of your virtual machine (you can use OpenStack floating IP) | 10.10.43.213 |
+| `host_ip` | IP address of your virtual machine (you can use OpenStack floating IP) | 192.0.2.0 |
 | `credentials` | MiniIO credentials json file | (move your credentials.json to /tmp/ folder) |
 | `bucket_in_name` | The name of incoming the bucket | original |
 | `bucket_out_name` | The name of the bucket with results | resized |

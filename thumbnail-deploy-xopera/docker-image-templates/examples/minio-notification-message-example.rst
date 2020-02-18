@@ -1,7 +1,7 @@
 MinIO notification message example
 ===================================
 
-This is an example of a JSON message sent to function by MinIO notification trigger.
+This is a template example of a JSON message sent to function by MinIO notification trigger.
 
 .. code-block:: json
 
@@ -13,7 +13,7 @@ This is an example of a JSON message sent to function by MinIO notification trig
             "configurationId": "Config",
             "object": {
               "versionId": "1",
-              "key": "hello.jpg",
+              "key": "image.jpg",
               "sequencer": "15CFEDF8D5304D1A",
               "contentType": "image/jpeg",
               "size": 224662,
@@ -27,20 +27,20 @@ This is an example of a JSON message sent to function by MinIO notification trig
               "ownerIdentity": {
                 "principalId": "AKIAIOSFODNN7EXAMPLE"
               },
-              "name": "anze",
-              "arn": "arn:aws:s3:::anze"
+              "name": "bucket",
+              "arn": "arn:aws:s3:::bucket"
             }
           },
           "eventSource": "minio:s3",
           "responseElements": {
             "x-amz-request-id": "15CFEDF8D4736ED9",
-            "x-minio-origin-endpoint": "http://172.17.0.2:9000",
+            "x-minio-origin-endpoint": "http://192.0.2.0:9000",
             "x-minio-deployment-id": "0170a4cc-dca6-4e72-86f1-c0cc760dff7f"
           },
           "source": {
             "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0",
             "port": "",
-            "host": "172.16.118.255"
+            "host": "192.0.2.0"
           },
           "eventName": "s3:ObjectCreated:Put",
           "userIdentity": {
@@ -48,7 +48,7 @@ This is an example of a JSON message sent to function by MinIO notification trig
           },
           "requestParameters": {
             "region": "",
-            "sourceIPAddress": "172.16.118.255",
+            "sourceIPAddress": "192.0.2.0",
             "accessKey": "AKIAIOSFODNN7EXAMPLE"
           },
           "eventTime": "2019-10-22T09:27:27Z",
@@ -56,5 +56,5 @@ This is an example of a JSON message sent to function by MinIO notification trig
           "eventVersion": "2.0"
         }
       ],
-      "Key": "anze/hello.jpg"
+      "Key": "bucket/image.jpg"
     }
